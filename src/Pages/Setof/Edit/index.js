@@ -315,6 +315,26 @@ const Add = (props) => {
                   <div className="card card-primary">
                     <div className="card-body">
                       <div className="row">
+                        <div className="col-6">
+                          <Form.Item
+                            label=" код"
+                            name="setofCode"
+                            rules={[requiredRule]}
+                            hasFeedback
+                          >
+                            <Input placeholder="Дугуй,обудудын код оруулна уу" />
+                          </Form.Item>
+                        </div>
+                        <div className="col-6">
+                          <Form.Item
+                            label="Дугуй,обудудын арын тоон код"
+                            name="code"
+                            rules={[requiredRule]}
+                            hasFeedback
+                          >
+                            <Input placeholder="Дугуй,обудудын арын тоон код оруулна уу" />
+                          </Form.Item>
+                        </div>
                         <div className="col-12">
                           <Form.Item
                             label="Гарчиг"
