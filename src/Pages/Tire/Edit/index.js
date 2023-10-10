@@ -238,7 +238,10 @@ const Add = (props) => {
 
   useEffect(() => {
     if (props.tire) {
-      form.setFieldsValue({ ...props.tire });
+      form.setFieldsValue({
+        ...props.tire,
+        make: props.tire.make && props.tire.make._id,
+      });
       setCheckedRadio({
         status: props.tire.status,
         star: props.tire.star,
